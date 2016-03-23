@@ -11,7 +11,15 @@ casper
     		});
     console.log(link)
 	})
-
+	.thenClick(".EpilogueNM")
+	.then(function(){
+		var link;
+	        link = casper.evaluate(function() {
+			return document.querySelectorAll('.TheMatch').length;
+    		});
+    console.log(link)
+	})
+	
 
 
 
